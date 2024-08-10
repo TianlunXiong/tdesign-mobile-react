@@ -7,6 +7,7 @@ import { Button } from '../button';
 import { Popup } from '../popup';
 import useConfig from '../_util/useConfig';
 import { ActionSheetList } from './ActionSheetList';
+import { ActionSheetGrid } from './ActionSheetGrid';
 
 export type ActionSheetProps = TdActionSheetProps & {
   showOverlay?: boolean;
@@ -67,6 +68,23 @@ export const ActionSheet: React.FC<ActionSheetProps> = (props) => {
         {
           theme === 'list'
             ? <ActionSheetList
+                items={items}
+                align={align}
+                onSelected={(idx) => {
+                  const found = items?.[idx];
+
+                  onSelected?.(found, idx);
+
+                  onClose?.('select');
+
+                  setInnerVisible(false);
+                }}
+              />
+            : null
+        }
+        {
+          theme === 'grid'
+            ? <ActionSheetGrid
                 items={items}
                 align={align}
                 onSelected={(idx) => {

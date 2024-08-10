@@ -68,7 +68,9 @@ export function ActionSheetList(props: ActionSheetListProps) {
             }}
             disabled={disabled}
             icon={icon as TElement}
-            color={color}
+            style={{
+              color,
+            }}
           >
             {label}
           </Button>

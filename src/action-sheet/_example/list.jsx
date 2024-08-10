@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, ActionSheet, Badge } from 'tdesign-mobile-react';
 import { AppIcon } from 'tdesign-icons-react';
 
-export default function List() {
+export default function ListExample() {
   const [normalVisible, setNormalVisible] = useState(false);
   const [descVisible, setDescVisible] = useState(false);
   const [iconVisible, setIconVisible] = useState(false);
