@@ -8,7 +8,7 @@ export default {
     {
       title: 'Divider 分割符',
       name: 'divider',
-      component: () => import('tdesign-mobile-react/divider/_example/index.jsx'),
+      component: () => import('tdesign-mobile-react/divider/_example/index.tsx'),
     },
     {
       title: 'Icon 图标',
@@ -211,6 +211,11 @@ export default {
       title: 'NoticeBar 公告栏',
       name: 'notice-bar',
       component: () => import('tdesign-mobile-react/notice-bar/_example/mobile.jsx'),
+    },
+    {
+      title: 'ActionSheet 动作面板',
+      name: 'action-sheet',
+      component: () => import('tdesign-mobile-react/action-sheet/_example/index.jsx'),
     },
   ],
 };
