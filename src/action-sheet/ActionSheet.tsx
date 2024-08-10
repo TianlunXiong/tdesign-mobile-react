@@ -34,7 +34,7 @@ export const ActionSheet: React.FC<ActionSheetProps> = (props) => {
 
   const [innerVisible, setInnerVisible] = useState(defaultVisible);
 
-  let finalVisible = typeof visible !== 'undefined' ? visible : innerVisible;
+  const finalVisible = typeof visible !== 'undefined' ? visible : innerVisible;
 
   const handleCancel = (ev) => {
     onCancel?.(ev);
