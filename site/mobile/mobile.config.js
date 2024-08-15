@@ -36,6 +36,11 @@ export default {
       component: () => import('tdesign-mobile-react/image/_example/index.jsx'),
     },
     {
+      title: 'Overlay 遮罩层',
+      name: 'overlay',
+      component: () => import('tdesign-mobile-react/overlay/_example/index.tsx'),
+    },
+    {
       title: 'Popup 弹出层',
       name: 'popup',
       component: () => import('tdesign-mobile-react/popup/_example/base.jsx'),
@@ -145,7 +150,7 @@ export default {
     {
       title: 'Tag 标签',
       name: 'tag',
-      component: () => import('tdesign-mobile-react/tag/_example/index.jsx'),
+      component: () => import('tdesign-mobile-react/tag/_example/index.tsx'),
     },
     {
       title: 'Toast 轻提示',
