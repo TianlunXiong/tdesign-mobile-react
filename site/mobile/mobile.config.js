@@ -216,6 +216,11 @@ export default {
       title: 'Result 结果',
       name: 'result',
       component: () => import('tdesign-mobile-react/result/_example/index.tsx'),
-    }
+    },
+    {
+      title: 'Table 表格',
+      name: 'table',
+      component: () => import('tdesign-mobile-react/table/_example/index.jsx'),
+    },
   ],
 };
