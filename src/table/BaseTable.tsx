@@ -6,6 +6,7 @@ import cx from 'classnames';
 import useClassName from './hooks/useClassName';
 import useStyle, { formatCSSUnit } from './hooks/useStyle';
 import defaultConfig from '../_common/js/global-config/mobile/locale/zh_CN';
+import Loading from '../loading';
 
 import type { TdBaseTableProps, BaseTableCol, TableRowData, BaseTableCellParams } from './type';
 
@@ -176,6 +177,11 @@ export const BaseTable = forwardRef((props: BaseTableProps, ref: React.Ref<HTMLT
           )}
           <tbody className={tableBaseClass.body}>{renderTableBody()}</tbody>
         </table>
+        {props.loading && (
+          <div className={`${classPrefix}-table__loading--full`}>
+            <Loading {...props.loadingProps} />
+          </div>
+        )}
       </div>
     </div>
   );
