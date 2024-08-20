@@ -93,7 +93,7 @@ export interface TdBaseTableProps<T extends TableRowData = TableRowData> {
   /**
    * 表格内容滚动时触发
    */
-  onScroll?: (params: { e: React.WheelEvent }) => void;
+  onScroll?: (params: { e: React.UIEvent }) => void;
 }
 
 /** 组件实例方法 */

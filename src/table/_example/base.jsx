@@ -45,10 +45,6 @@ export function BaseExample() {
     console.log('cell-cliek=====', e);
   };
 
-  const handleScroll = (e) => {
-    console.log('scroll=====', e);
-  };
-
   return (
     <div style={{ margin: '16px 16px 0' }}>
       <Table
@@ -59,7 +55,6 @@ export function BaseExample() {
         showHeader
         onCellClick={handleCellClick}
         onRowClick={handleRowClick}
-        onScroll={handleScroll}
       ></Table>
     </div>
   );

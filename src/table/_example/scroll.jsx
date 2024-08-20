@@ -27,9 +27,13 @@ const columns = [
 ];
 
 export function ScrollExample() {
+  const handleScroll = (e) => {
+    console.log('scroll=====', e);
+  };
+
   return (
     <div style={{ margin: '16px 16px 0' }}>
-      <Table columns={columns} data={data} rowKey="index" showHeader></Table>
+      <Table columns={columns} data={data} rowKey="index" showHeader onScroll={handleScroll}></Table>
     </div>
   );
 }

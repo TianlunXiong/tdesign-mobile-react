@@ -156,7 +156,7 @@ export const BaseTable = forwardRef((props: BaseTableProps, ref: React.Ref<HTMLT
         ref={tableContentRef}
         className={tableBaseClass.content}
         style={tableContentStyles}
-        onWheel={(e) => {
+        onScroll={(e) => {
           props.onScroll?.({ e });
         }}
       >

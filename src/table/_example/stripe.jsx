@@ -26,9 +26,21 @@ const columns = [
 ];
 
 export function StripeExample() {
+  const handleScroll = (e) => {
+    console.log('scroll=====', e);
+  };
+
   return (
     <div style={{ margin: '16px 16px 0' }}>
-      <Table columns={columns} data={data} rowKey="index" showHeader stripe maxHeight={400}></Table>
+      <Table
+        columns={columns}
+        data={data}
+        rowKey="index"
+        showHeader
+        stripe
+        maxHeight={400}
+        onScroll={handleScroll}
+      ></Table>
     </div>
   );
 }
